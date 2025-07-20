@@ -47,3 +47,19 @@ llama3_vibe_coder/
 ├── app.py                 # Typewriter-style CLI interface
 ├── requirements.txt       # Python dependencies
 └── README.md              # Project description
+
+⚙️ Setup (Anaconda)
+
+# Create environment
+conda create -n vibe-coder python=3.10 -y
+conda activate vibe-coder
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Pull and run LLaMA 3.3 using Ollama
+ollama serve
+ollama pull llama3
+
+# Start the assistant
+python app.py
